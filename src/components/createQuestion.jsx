@@ -32,7 +32,7 @@ export default function CreateQuestions() {
   // Submit all questions
   const submitQuestions = async () => {
     try {
-         const res = await fetch("http://localhost:3000/createQuestion", {
+         const res = await fetch("https://code-editor-backend-787k.onrender.com/createQuestion", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({data:questionList}),

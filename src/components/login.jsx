@@ -21,7 +21,7 @@ const LoginForm = () => {
       // If ID exists, post to /login/:id, else /login
       const endpoint = id ? `/login/${id}` : "/login";
 
-      const res = await fetch(`http://localhost:3000${endpoint}`, {
+      const res = await fetch(`https://code-editor-backend-787k.onrender.com${endpoint}`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ email, password }),

@@ -18,7 +18,7 @@ export default function Register() {
     e.preventDefault();
     try {
 
-        const res = await fetch("http://localhost:3000/register", {
+        const res = await fetch("https://code-editor-backend-787k.onrender.com/register", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({data:form}),

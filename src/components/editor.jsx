@@ -90,7 +90,7 @@ const Editor = () => {
   const submitCode = async () => {
     if (!editorActive) return;
     try {
-      await fetch(`http://localhost:3000/submitAnswer/${questionData._id}`, {
+      await fetch(`https://code-editor-backend-787k.onrender.com/submitAnswer/${questionData._id}`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ data:htmlCode+cssCode+jsCode})
